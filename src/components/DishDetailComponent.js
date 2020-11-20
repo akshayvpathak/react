@@ -5,16 +5,16 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
     function RenderDish({dish}) {
         return (
             <Card>
-                <CardImg width="100%" src={this.props.dish.image} alt={this.props.dish.name} />
+                <CardImg width="100%" src={dish.image} alt={dish.name} />
                 <CardBody>
-                    <CardTitle>{this.props.dish.name}</CardTitle>
-                    <CardText>{this.props.dish.description}</CardText>
+                    <CardTitle>{dish.name}</CardTitle>
+                    <CardText>{dish.description}</CardText>
                 </CardBody>
             </Card>
         );
     }
 
-   function RenderComments(comments) {
+   function RenderComments({comments}) {
         var commentList = comments.map(comment => {
             return (
                 <li key={comment.id} >
@@ -38,7 +38,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
     const DishDetail = (props) => {
         console.log('component rendered');
-        if (this.props.dish) {
+        if (props.dish) {
             return (
                 <div className="row">
                     <div className="col-12 col-md-5 m-1">

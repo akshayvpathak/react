@@ -38,7 +38,10 @@
   "devDependencies": {
     "@popperjs/core": "^2.5.4",
     "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
     "react-popper": "^2.2.4",
+    "react-router-dom": "^5.2.0",
     "reactstrap": "^8.7.1"
   }
 }
